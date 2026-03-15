@@ -19,3 +19,7 @@ print(s1)
 s3 = '''Hello
 Python'''
 print(s3)
+
+head = "Python"
+tail = " is fun"
+print(head + tail)
