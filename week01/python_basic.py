@@ -136,3 +136,27 @@ print(a)
 
 # 원소 위치 확인
 print(a.index(9))
+
+# 원소 삽입
+a.insert(0, 99)
+print(a)
+
+# 원소 삭제
+a.remove(99)
+print(a)
+
+b = [1, 2,3]
+print(b.pop())
+print(b)
+
+print(b.pop(0))
+print(b)
+
+# 특정 원소값의 개수
+a= [2,1,0,2,3,2,4,2]
+print(a.count(2))
+
+# 투플 만들기
+t1=(1,)
+t2 = (1,2,3)
+t3 = 1,2,3
