@@ -109,3 +109,5 @@ print(iris.drop('class', axis=1).agg(['sum','mean','std']))
 # print(iris.agg(['sum', 'mean'm 'std']))    # class 컬럼으로 인해 에러 발생
 
 
+print(iris['class'].unique())
+print(iris['class'],nunique())
