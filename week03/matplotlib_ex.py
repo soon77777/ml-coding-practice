@@ -335,4 +335,12 @@ parch_counts = titanic.groupby('Parch')['Survived'].value_counts().unstack().fil
 print(parch_counts)
 
 # x, y값 설정
-x = parch_counts.index.astype(str) # 데이터프레임의 인덱스를
+x = parch_counts.index.astype(str) # 데이터프레임의 인덱스를 문자열로 변환
+y1 = parch_counts[0].values # 사망자
+y2 = parch_counts[1].values # 생존자
+
+# plt.subplots() 함수를 사용하여 하나의 그림인 figure에 개별 서브플롯을 동시에 추가
+fig, axes = plt.subplots(2, 1, figsize=(10,10))
+
+# 첫 번째 서브플롯 설정(선 그래프)
+axes[0].plot(x, y1, '-o', color='indigo', markersize=7,)
