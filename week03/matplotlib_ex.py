@@ -91,4 +91,6 @@ print(titanic.info())
 plt.figure(figsize=(12,8))
 scatter = plt.scatter(x='Age', y  'Fare', data = titanic, c= titanic['Survived'],smap='Set2',alpha=0.7)
 
-plt.title('Age and fare Relationship with Survival on')
+plt.title('Age and fare Relationship with Survival on the Titanic')
+plt.xlabel('Age')
+plt.ylabel('Fare')
