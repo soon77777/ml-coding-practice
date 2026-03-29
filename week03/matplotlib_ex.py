@@ -348,3 +348,5 @@ axes[0].set_xlabel('Parch')
 axes[0].set_ylabel('Not Survived Count', color='indigo')
 axes[0].tick_parms(axis='y', labelcolor='indigo')
 axes[0].legend(loc='upper right')
+
+# 두 번째 서브플롯 설정 (막대 그래프)
