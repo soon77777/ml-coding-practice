@@ -70,4 +70,4 @@ for i, value in enumerate(survived_counts):
     plt.legend(bars, ['Survived - Femal', 'Survived - Male'], loc= 'upper right')
 
     # 차이 강조를 위해 수평선 추가
-    plt.axvline(x=survived_counts['male'])
+    plt.axvline(x=survived_counts['male'], color='gray')
