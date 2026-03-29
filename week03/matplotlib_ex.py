@@ -74,3 +74,4 @@ for i, value in enumerate(survived_counts):
 
     # 생존자 수 표시
     for i, value in enumerate(survived_counts):
+        plt.text(value + 1, i, str(value), ha='left',va=)
