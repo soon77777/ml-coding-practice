@@ -63,4 +63,4 @@ for i, value in enumerate(survived_counts):
     print(survived_counts)
 
     #수평 막대 그래프 그리기
-    bars
+    bars = plt.barh(survived_counts.index, survived_counts, color=)
