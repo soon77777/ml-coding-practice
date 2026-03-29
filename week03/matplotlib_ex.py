@@ -67,4 +67,5 @@ for i, value in enumerate(survived_counts):
     plt.title('Survived Counts by Gender on Titanic')
     plt.xlabel('Count')
     plt.ylabel('Gender')
-    plt.legend(bars, ['Survived - Femal', 'Survived' - Male'], loc= 'upper right')
+    plt.legend(bars, ['Survived - Femal', 'Survived - Male'], loc= 'upper right')
+    
