@@ -76,4 +76,4 @@ for i, value in enumerate(survived_counts):
     for i, value in enumerate(survived_counts):
         plt.text(value + 1, i, str(value), ha='left',va='center')
 
-        plt.savefig('Figure03.png')
+plt.savefig('Figure03.png')
