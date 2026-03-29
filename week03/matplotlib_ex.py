@@ -94,6 +94,5 @@ scatter = plt.scatter(x='Age', y  'Fare', data = titanic, c= titanic['Survived']
 plt.title('Age and fare Relationship with Survival on the Titanic')
 plt.xlabel('Age')
 plt.ylabel('Fare')
-plt.legend(handles=scatter.legend_elements([0], title='Survived',
-            labels=['Not Survived', 'Survived'], loc = 'upper right'
-                                           ))
+plt.legend(handles=scatter.legend_elements()[0], title='Survived',
+            labels=['Not Survived', 'Survived'], loc = 'upper right')
