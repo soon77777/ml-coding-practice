@@ -53,27 +53,27 @@ plt.grid(axis='y',linestyle='--', alpha =0.7)
 for i, value in enumerate(survived_counts):
     plt.text(i, value + 1, str(value), ha='center', va='bottom')
 
-    plt.savefig('Figur02.png')
-    plt.close()
+plt.savefig('Figur02.png')
+plt.close()
 
-    """### **수평 막대 그래프 : 성별에 따른 생존자 수 확인하기**"""
+"""### **수평 막대 그래프 : 성별에 따른 생존자 수 확인하기**"""
 
-    # 성별에 따른 생존자의 수 계산
-    survived_counts = titanic[titanic['Survived'] == 1]['Sex'].value_counts()
-    print(survived_counts)
+# 성별에 따른 생존자의 수 계산
+survived_counts = titanic[titanic['Survived'] == 1]['Sex'].value_counts()
+print(survived_counts)
 
-    #수평 막대 그래프 그리기
-    bars = plt.barh(survived_counts.index, survived_counts, color=['darkturquoise', 'salmon'])
-    plt.title('Survived Counts by Gender on Titanic')
-    plt.xlabel('Count')
-    plt.ylabel('Gender')
-    plt.legend(bars, ['Survived - Femal', 'Survived - Male'], loc= 'upper right')
+#수평 막대 그래프 그리기
+bars = plt.barh(survived_counts.index, survived_counts, color=['darkturquoise', 'salmon'])
+plt.title('Survived Counts by Gender on Titanic')
+plt.xlabel('Count')
+plt.ylabel('Gender')
+plt.legend(bars, ['Survived - Femal', 'Survived - Male'], loc= 'upper right')
 
-    # 차이 강조를 위해 수평선 추가
-    plt.axvline(x=survived_counts['male'], color='gray',linestyle='--',linewidth=1)
+# 차이 강조를 위해 수평선 추가
+plt.axvline(x=survived_counts['male'], color='gray',linestyle='--',linewidth=1)
 
-    # 생존자 수 표시
-    for i, value in enumerate(survived_counts):
-        plt.text(value + 1, i, str(value), ha='left',va='center')
+# 생존자 수 표시
+for i, value in enumerate(survived_counts):
+    plt.text(value + 1, i, str(value), ha='left',va='center')
 
 plt.savefig('Figure03.png')
