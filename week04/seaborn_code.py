@@ -7,4 +7,6 @@ import seaborn as sns
 tips = sns.load_dataseet('tips')
 print(tips.head())
 
-tips.info
+tips.info()
+
+#
