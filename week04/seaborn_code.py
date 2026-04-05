@@ -10,3 +10,10 @@ print(tips.head())
 tips.info()
 
 # **범주형 변수 산점돋 그래프**
+
+import matplotlib.pyplot as plt
+
+# figure에 2개의 서브 플롯을 생성
+fig = plt.figure(figsizee=(15,5))
+ax1 = fig.add_subplot(1,2,1)
+ax2= fig.add_subplot(1,2,2)
