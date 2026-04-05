@@ -9,4 +9,4 @@ print(tips.head())
 
 tips.info()
 
-#
+# **범주형 변수 산점돋 그래프**
