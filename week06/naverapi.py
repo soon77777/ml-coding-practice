@@ -47,3 +47,10 @@ def getNaverSearch(node, srcText, page_start, display):
 
     if (responseDecode == None):
         return None
+    else:
+        return json.loads(responseDecode)
+    
+def getRequestUrl(url):
+    req = urllib.request.Request(url)
+
+    req.add_header("X-Naver-Client-Id", client_id)
