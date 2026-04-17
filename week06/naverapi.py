@@ -66,4 +66,8 @@ def getRequestUrl(url):
         print(e)
         print("[%s] Error for URL : %s" % (datetime.datetime.now(), url))
         return None
-    
+
+
+def getPostData(post, jsonResult, cnt):  #[CODE 3]
+    title = post('title')
+    description
