@@ -28,13 +28,13 @@ def main():
     print('전체 검색 : %d 건' %total)
 
     with open('%s_naver_%s.json' % (srcTeext, node), 'w', encoding = 'utf8') as outfile:
-            jsonFile = json.dumps(jsonResult, indent = 4, sort_keys = True,
-                                  ensure_ascii = False)
+        jsonFile = json.dumps(jsonResult, indent = 4, sort_keys = True,
+                              ensure_ascii = False)
             
-            outfile.write(jsonfile)
+        outfile.write(jsonfile)
 
-        print("가져온 데이터 : %d 건" %(cnt))
-        print('%s_naver_%s.josn SAVED' % (srcText, node))
+    print("가져온 데이터 : %d 건" %(cnt))
+    print('%s_naver_%s.josn SAVED' % (srcText, node))
 
 
     def
