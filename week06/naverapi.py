@@ -70,4 +70,11 @@ def getRequestUrl(url):
 
 def getPostData(post, jsonResult, cnt):  #[CODE 3]
     title = post('title')
-    description
+    description = post['description']
+    org_link = post['originallink']
+    link = post['link']
+
+    # %a: 짧은 형식의 요일 이름 (예, 'Mon', "Tue', "Wed', ...)
+    # %d: 일 (예, 01, 02, 03, ...)
+    # %b: 짧은 형ㅇ식의 월 이름 (예, 'Jan', 'Feb', 'Mar', ...)
+    pDate = datetime.datetime.strptime(post['pubDate'], '%a, %d %b')
