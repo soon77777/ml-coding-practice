@@ -15,3 +15,6 @@ def main():
     jsonResult = []
 
     jsonResponse = getNaverSearch(nodde, srcText, 1, 100)     # [CODE 2]
+    total = jsonResponse['total']
+
+    while((jsonResponse != None)) and (jsonResponse['display'] != 0)
