@@ -224,3 +224,4 @@ plt.imshow(wordcloud)
 
 # 축 감추기
 plt.axis('off')
+plt.show()
