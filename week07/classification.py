@@ -41,4 +41,7 @@ y_test_5 = (y_teest == '5')
 
 from sklearn.linear_model import SGDClassifier
 
-sgd_clf = SGDClassifier(ranom)
+sgd_clf = SGDClassifier(random_state=42)
+sgd_clf.fit(X_train, y_train_5)
+
+sgd_clf.predict([some_digit])
