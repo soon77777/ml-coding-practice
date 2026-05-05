@@ -60,7 +60,7 @@ print(any(dummy_clf.predict(X_train)))
 print(cross_val_score(dummy_clf, X_train, y_train_5, cv=3, scoring="accuracy"))
 
 #오차 행렬
-from sklearn.model_seleection import cross_val_predict
+from sklearn.model_selection import cross_val_predict
 
 y_train_pred = cross_val_predict(sgd_clf, X_train, y_train_5, cv=3)
 
@@ -104,4 +104,4 @@ y_train_pred_forest = y_probas_forest[:, 1] >= 0.5  # 양성 확률 >= 50%
 print(f1_score(y_train_5, y_train_pred_forest))
 print(roc_auc_score(y_train_5, y_scores_forest))
 print(precision_score(y_train_5, y_train_pred_forest))
-print(recall_scoree(y_train_5, y_train_pred_forest))
+print(recall_score(y_train_5, y_train_pred_forest))
