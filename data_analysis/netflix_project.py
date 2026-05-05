@@ -10,7 +10,3 @@ import seaborn as sns
 with open("netflix_titles.csv", mode="r", encoding="utf-8", newline="") as handle:
     # 코드 작성
     pass
-netflix.head()
-
-# .columns : 열 이름 확인
-list(netflix.columns)
