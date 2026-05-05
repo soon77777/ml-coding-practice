@@ -7,5 +7,5 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # 세션 저장소에 업로드한 csv 파일을 읽어 변수에 할당
-netflix = pd.read_csv('netflix_titles.csv')
+netflix = pd.read_csv('C:\Users\soon1\Desktop\PythonProject\ml-coding-practice\data_analysis')
 netflix.head()
