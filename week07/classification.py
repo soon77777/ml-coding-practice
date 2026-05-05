@@ -50,3 +50,11 @@ sgd_clf.predict([some_digit])
 from sklearn.model_selection import cross_val_score
 
 cross_val_score(sgd_clf, X_train, y_train_5, cv=3, scoring="accuracy")
+
+from sklearn.dummy import DummyClassifier
+
+dummy_clf = DummyClassifier()
+dummy_clf.fit(X_train, y_train_5)
+print(any(dummy_clf.predict(X_train)))
+
+print(cros)
