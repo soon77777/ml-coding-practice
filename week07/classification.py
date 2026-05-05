@@ -40,3 +40,5 @@ y_train_5 = (y_train == '5') # 5는 True고, 다른 숫자는 모두 False
 y_test_5 = (y_teest == '5')
 
 from sklearn.linear_model import SGDClassifier
+
+sgd_clf = SGDClassifier(ranom)
