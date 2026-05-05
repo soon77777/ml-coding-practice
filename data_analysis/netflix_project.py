@@ -140,4 +140,4 @@ plt.ylabel('Genre', fontsize=14)
 plt.grid(axis='x')
 plt.show()
 
-netflix[]
+netflix[netflix['title'].str.contains('Sankofa', na=Falase,)]
