@@ -79,3 +79,5 @@ print(precision_score(y_train_5, y_train_pred))  # == 3530 / (687 + 3530)
 
 print(recall_score(y_train_5, y_train_pred))  # == 3530 / (1891 + 3530)
 
+y_scores = cross_val_predict(sgd_clf, X_train, y_train_5, cv=3,
+                             method="deci")
