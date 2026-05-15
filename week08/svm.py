@@ -31,5 +31,4 @@ polynomial_svm_clf = make_pipeline(
     PolynomialFeatures(degree=3),
     StandarScaler(),
     LinearSVC(C=10, max_iter=10_00, dual=True, random_state=42)
-    
 )
