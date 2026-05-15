@@ -112,3 +112,4 @@ sgd_reg.fit(X, y.ravel())  # fit()은 1D 타겟을 기대하므로 y.ravel()을 
 print(sgd_reg.predict([[1.5]]))
 
 # 확률적 평균 GD(solver="sag")
+# 이전과 거의 동일한 솔루션을 얻을 수 있음을 보여줍니다.
