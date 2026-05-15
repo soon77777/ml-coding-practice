@@ -58,3 +58,8 @@ y = 4 + 3 * X[:,0] + np.random.randn(50)
 
 svm_reg = make_pipeline(StandardScaler(),
                         LinearSVR(epsilon=0.5, dual=True, random_state=42))
+svm_reg.fit(X,y)
+
+from sklearn.svm import SVR
+
+
