@@ -43,4 +43,5 @@ poly_kernel_svm_clf = make_pipeline(StandardScaler(),
 poly_kernel_svm_clf.fit(X,y)
 
 # 가우스 RBF 커널
-rbf_k
+rbf_kernel_svm_clf = make_pipeline(StandarScaler(),
+                                   SVC(kernel="rbf", gamma=5, C=0.001))
