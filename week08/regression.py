@@ -162,3 +162,4 @@ x = iris.data[["petal length (cm)", "petal width (cm)"]].values
 y = iris["target"]
 X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=42)
 
+softmax_reg
