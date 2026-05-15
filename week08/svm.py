@@ -29,7 +29,7 @@ X, y = make_moons(n_samples=100, noise=0.15, random_state=42)
 
 polynomial_svm_clf = make_pipeline(
     PolynomialFeatures(degree=3),
-    StandarScaler(),
+    StandardScaler(),
     LinearSVC(C=10, max_iter=10_00, dual=True, random_state=42)
 )
 polynomial_svm_clf.fit(X,y)
@@ -43,7 +43,7 @@ poly_kernel_svm_clf = make_pipeline(StandardScaler(),
 poly_kernel_svm_clf.fit(X,y)
 
 # 가우스 RBF 커널
-rbf_kernel_svm_clf = make_pipeline(StandarScaler(),
+rbf_kernel_svm_clf = make_pipeline(StandardScaler(),
                                    SVC(kernel="rbf", gamma=5, C=0.001))
 rbf_kernel_svm_clf.fit(X,y)
 
