@@ -22,3 +22,7 @@ print(svm_clf.decision_function(X_new))
 
 # 비선형 SVM 분류
 
+from sklearn.datasets import make_moons
+from sklearn.preprocessing import PolynomialFeatures
+
+X, y = make_moons(n_samples=100, noise=0.15, ran)
