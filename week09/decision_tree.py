@@ -19,3 +19,6 @@ export_graphviz(
     filled=True
 )
 
+from graphviz import Source
+
+Source.from_file("iris_tree.dot")
