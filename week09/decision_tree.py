@@ -7,3 +7,4 @@ y_iris = iris.target
 
 tree_clf = DecisionTreeClassifier(max_depth=2, random_state=42)
 tree_clf.fit(X_iris,y_iris)
+print(y_iris)
